@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <service id="http_api_auth.scheme_handler_prototype" class="Che\HttpApiAuth\SchemeHandler" public="false" abstract="true">
+            <argument />
+            <argument />
+        </service>
+
+        <service id="http_api_auth.scheme.signature_prototype" class="Che\HttpApiAuth\Scheme\Signature\RequestSignatureScheme"
+                 public="false" abstract="true">
+            <argument /> <!-- algorithm -->
+            <argument /> <!-- encoded -->
+            <argument /> <!-- tokenLifeTime -->
+        </service>
+        <service id="http_api_auth.scheme.signature.algorithm.hmac_prototype"
+                 class="Che\HttpApiAuth\Scheme\Signature\Algorithm\HmacSignature"
+                 public="false" abstract="true">
+            <argument /> <!-- hashAlgorithm-->
+            <argument /> <!-- binary-->
+        </service>
+
+        <service id="http_api_auth.security.provider.request_scheme_prototype"
+                 class="Che\HttpApiAuth\Bundle\Security\RequestSchemeAuthenticationProvider"
+                 public="false" abstract="true">
+            <argument /> <!-- userProvider -->
+            <argument /> <!-- schemeHandler -->
+            <argument type="service" id="security.user_checker" />
+            <argument /> <!-- providerKey -->
+        </service>
+
+        <service id="http_api_auth.security.listener.http_header_prototype"
+                 class="Che\HttpApiAuth\Bundle\Security\HttpHeaderAuthenticationListener"
+                 public="false" abstract="true">
+            <argument type="service" id="security.context" />
+            <argument type="service" id="security.authentication.manager" />
+            <argument /> <!-- schemeHandler -->
+            <argument /> <!-- providerKey -->
+        </service>
+
+    </services>
+
+</container>

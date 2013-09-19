@@ -1,0 +1,29 @@
+{
+    "name": "che/http-api-auth-bundle",
+    "description": "Symfony2 Bundle for HttpApiAuth",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kirill chEbba Chebunin",
+            "email": "iam@chebba.org"
+        }
+    ],
+
+    "autoload": {
+        "psr-0": {
+            "Che\\HttpApiAuth\\Bundle": ""
+        }
+    },
+    "target-dir": "Che/HttpApiAuth/Bundle",
+
+    "require": {
+        "php": ">=5.4.0",
+
+        "che/http-api-auth": "dev-master",
+        "symfony/framework-bundle": "2.*, >=2.3",
+        "symfony/security-bundle": "2.*, >=2.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    }
+}
