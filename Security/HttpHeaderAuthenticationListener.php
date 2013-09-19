@@ -23,9 +23,10 @@ use Symfony\Component\Security\Core\User\UserProviderInterface;
 use Symfony\Component\Security\Http\Firewall\ListenerInterface;
 
 /**
- * Class HttpApiRequestListener
+ * Request listener to handle http API authorization
  *
  * @author Kirill chEbba Chebunin <iam@chebba.org>
+ * @license http://opensource.org/licenses/mit-license.php MIT
  */
 class HttpHeaderAuthenticationListener implements ListenerInterface
 {

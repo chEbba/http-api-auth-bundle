@@ -16,9 +16,12 @@ use Symfony\Component\DependencyInjection\DefinitionDecorator;
 use Symfony\Component\DependencyInjection\Reference;
 
 /**
- * Class RequestSignatureConfiguration
+ * Configuration for RequestSignatureScheme
+ *
+ * @see RequestSignatureScheme
  *
  * @author Kirill chEbba Chebunin <iam@chebba.org>
+ * @license http://opensource.org/licenses/mit-license.php MIT
  */
 class RequestSignatureExtension implements SchemeExtension
 {

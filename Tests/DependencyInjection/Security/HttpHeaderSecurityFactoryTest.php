@@ -19,6 +19,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
  * Test for HttpHeaderSecurityFactory
  *
  * @author Kirill chEbba Chebunin <iam@chebba.org>
+ * @license http://opensource.org/licenses/mit-license.php MIT
  */
 class HttpHeaderSecurityFactoryTest extends TestCase
 {

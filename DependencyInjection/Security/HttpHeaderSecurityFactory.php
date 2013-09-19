@@ -19,9 +19,10 @@ use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Bundle\SecurityBundle\DependencyInjection\Security\Factory\SecurityFactoryInterface;
 
 /**
- * Description of SignedRequestSecurityFactory
+ * Security factory for http api authorization
  *
  * @author Kirill chEbba Chebunin <iam@chebba.org>
+ * @license http://opensource.org/licenses/mit-license.php MIT
  */
 class HttpHeaderSecurityFactory implements SecurityFactoryInterface
 {

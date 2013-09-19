@@ -13,12 +13,16 @@ use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /**
- * Class SchemeDefinition
+ * Configuration for schemes
  *
  * @author Kirill chEbba Chebunin <iam@chebba.org>
+ * @license http://opensource.org/licenses/mit-license.php MIT
  */
 interface SchemeExtension
 {
+    /**
+     * @return string
+     */
     public function getName();
 
     /**

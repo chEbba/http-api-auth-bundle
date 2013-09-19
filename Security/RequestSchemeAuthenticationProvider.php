@@ -17,9 +17,10 @@ use Symfony\Component\Security\Core\User\UserCheckerInterface;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 
 /**
- * Class RequestSchemeAuthenticationProvider
+ * Authentication provider for RequestSchemeToken
  *
  * @author Kirill chEbba Chebunin <iam@chebba.org>
+ * @license http://opensource.org/licenses/mit-license.php MIT
  */
 class RequestSchemeAuthenticationProvider implements AuthenticationProviderInterface
 {

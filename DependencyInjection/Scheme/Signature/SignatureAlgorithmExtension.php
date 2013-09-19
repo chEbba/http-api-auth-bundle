@@ -13,9 +13,10 @@ use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /**
- * Class HashAlgorithmConfiguration
+ * Algorithm configuration for RequestSignature scheme
  *
  * @author Kirill chEbba Chebunin <iam@chebba.org>
+ * @license http://opensource.org/licenses/mit-license.php MIT
  */
 interface SignatureAlgorithmExtension
 {

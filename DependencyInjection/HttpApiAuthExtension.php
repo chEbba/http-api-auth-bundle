@@ -21,9 +21,10 @@ use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Component\HttpKernel\DependencyInjection\ConfigurableExtension;
 
 /**
- * Class HttpApiAuthExtension
+ * Bundle extension
  *
  * @author Kirill chEbba Chebunin <iam@chebba.org>
+ * @license http://opensource.org/licenses/mit-license.php MIT
  */
 class HttpApiAuthExtension extends ConfigurableExtension
 {
@@ -73,6 +74,9 @@ class HttpApiAuthExtension extends ConfigurableExtension
         }
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public function getConfiguration(array $config, ContainerBuilder $container)
     {
         $container->addResource(new FileResource(__DIR__ . '/Configuration.php'));

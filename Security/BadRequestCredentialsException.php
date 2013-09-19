@@ -12,9 +12,10 @@ namespace Che\HttpApiAuth\Bundle\Security;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 
 /**
- * Class BadRequestCredentialsException
+ * Authentication exception for invalid request credentials
  *
  * @author Kirill chEbba Chebunin <iam@chebba.org>
+ * @license http://opensource.org/licenses/mit-license.php MIT
  */
 class BadRequestCredentialsException extends AuthenticationException
 {

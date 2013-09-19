@@ -18,9 +18,10 @@ use Symfony\Component\Security\Core\Role\Role;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
- * Class RequestSchemeTokenTest
+ * Test for RequestSchemeToken
  *
  * @author Kirill chEbba Chebunin <iam@chebba.org>
+ * @license http://opensource.org/licenses/mit-license.php MIT
  */
 class RequestSchemeTokenTest extends TestCase
 {

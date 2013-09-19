@@ -17,9 +17,10 @@ use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 
 /**
- * Class RequestSchemeAuthenticationProviderTest
+ * Test for RequestSchemeAuthenticationProvider
  *
  * @author Kirill chEbba Chebunin <iam@chebba.org>
+ * @license http://opensource.org/licenses/mit-license.php MIT
  */
 class RequestSchemeAuthenticationProviderTest extends TestCase
 {

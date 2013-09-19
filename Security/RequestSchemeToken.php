@@ -16,9 +16,10 @@ use Symfony\Component\Security\Core\Authentication\Token\AbstractToken;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
- * Class RequestSchemeToken
+ * Token for api requests
  *
  * @author Kirill chEbba Chebunin <iam@chebba.org>
+ * @license http://opensource.org/licenses/mit-license.php MIT
  */
 class RequestSchemeToken extends AbstractToken
 {

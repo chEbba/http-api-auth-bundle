@@ -16,9 +16,10 @@ use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Processor;
 
 /**
- * Class ConfigurationTest
+ * Test for Configuration
  *
  * @author Kirill chEbba Chebunin <iam@chebba.org>
+ * @license http://opensource.org/licenses/mit-license.php MIT
  */
 class ConfigurationTest extends TestCase
 {

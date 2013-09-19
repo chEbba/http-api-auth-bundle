@@ -14,9 +14,12 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\DefinitionDecorator;
 
 /**
- * Class HmacAlgorithmConfiguration
+ * AlgorithmExtension for HmacSignature configuration
+ *
+ * @see HmacSignature
  *
  * @author Kirill chEbba Chebunin <iam@chebba.org>
+ * @license http://opensource.org/licenses/mit-license.php MIT
  */
 class HmacAlgorithmExtension implements SignatureAlgorithmExtension
 {

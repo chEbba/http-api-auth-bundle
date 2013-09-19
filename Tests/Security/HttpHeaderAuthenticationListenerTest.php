@@ -22,9 +22,10 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 
 /**
- * Class HttpHeaderAuthenticationListenerTest
+ * Test for HttpHeaderAuthenticationListener
  *
  * @author Kirill chEbba Chebunin <iam@chebba.org>
+ * @license http://opensource.org/licenses/mit-license.php MIT
  */
 class HttpHeaderAuthenticationListenerTest extends TestCase
 {
